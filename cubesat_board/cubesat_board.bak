@@ -43,10 +43,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L CONN_02X26 J?
+L CONN_02X26 J1
 U 1 1 59E2C8CE
 P 8000 3200
-F 0 "J?" H 8000 4550 50  0000 C CNN
+F 0 "J1" H 8000 4550 50  0000 C CNN
 F 1 "CONN_02X26" V 8000 3200 50  0000 C CNN
 F 2 "" H 8000 2500 50  0001 C CNN
 F 3 "" H 8000 2500 50  0001 C CNN
@@ -54,14 +54,18 @@ F 3 "" H 8000 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L CONN_02X26 J?
+L CONN_02X26 J2
 U 1 1 59E2C8F9
 P 9850 3200
-F 0 "J?" H 9850 4550 50  0000 C CNN
+F 0 "J2" H 9850 4550 50  0000 C CNN
 F 1 "CONN_02X26" V 9850 3200 50  0000 C CNN
 F 2 "" H 9850 2500 50  0001 C CNN
 F 3 "" H 9850 2500 50  0001 C CNN
 	1    9850 3200
 	1    0    0    -1  
 $EndComp
+Text Notes 8900 4650 0    60   ~ 0
+Exterior (rightmost) connector - pins 53 to 104
+Text Notes 7050 1750 0    60   ~ 0
+Interior (leftmost) connector - pins 1 to 52
 $EndSCHEMATC
