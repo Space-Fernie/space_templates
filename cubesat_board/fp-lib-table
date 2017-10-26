@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name mounting_holes)(type KiCad)(uri C:/Users/David/Documents/SpaceConcordia/spacecraft_kicad_libraries/mounting_holes.pretty)(options "")(descr ""))
+)
