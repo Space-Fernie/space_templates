@@ -1,4 +1,4 @@
-update=10/14/2017 10:01:38 PM
+update=2017-11-01 5:54:57 PM
 version=1
 last_client=kicad
 [pcbnew]
@@ -60,7 +60,7 @@ LibName29=valves
 version=1
 [schematic_editor]
 version=1
-PageLayoutDescrFile=D:/David/Documents/SpaceConcordiaElec/space_templates/draft_sheet_templates/kicad_layout_template.kicad_wks
+PageLayoutDescrFile=space_kicad_layout_template.kicad_wks
 PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
