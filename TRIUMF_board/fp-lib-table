@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name mounting_holes)(type KiCad)(uri C:/Users/David/Documents/SpaceConcordia/spacecraft_kicad_libraries/mounting_holes.pretty)(options "")(descr ""))
+  (lib (name Diodes_SMD)(type KiCad)(uri "$(KISYSMOD)/Diodes_SMD.pretty")(options "")(descr ""))
+  (lib (name Resistors_SMD)(type KiCad)(uri "$(KISYSMOD)/Resistors_SMD.pretty")(options "")(descr ""))
+)

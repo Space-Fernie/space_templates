@@ -1,0 +1,179 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LED D2
+U 1 1 5A136AB7
+P 10500 1400
+F 0 "D2" H 10500 1500 50  0000 C CNN
+F 1 "LED" H 10500 1300 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 10500 1400 50  0001 C CNN
+F 3 "" H 10500 1400 50  0001 C CNN
+	1    10500 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L LED D1
+U 1 1 5A136B85
+P 10800 1400
+F 0 "D1" H 10800 1500 50  0000 C CNN
+F 1 "LED" H 10800 1300 50  0000 C CNN
+F 2 "Diodes_SMD:D_0805" H 10800 1400 50  0001 C CNN
+F 3 "" H 10800 1400 50  0001 C CNN
+	1    10800 1400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R R1
+U 1 1 5A136BC9
+P 10800 1050
+F 0 "R1" V 10880 1050 50  0000 C CNN
+F 1 "220" V 10800 1050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 10730 1050 50  0001 C CNN
+F 3 "" H 10800 1050 50  0001 C CNN
+	1    10800 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 5A136BF0
+P 10500 1050
+F 0 "R2" V 10580 1050 50  0000 C CNN
+F 1 "220" V 10500 1050 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 10430 1050 50  0001 C CNN
+F 3 "" H 10500 1050 50  0001 C CNN
+	1    10500 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10500 1200 10500 1250
+Wire Wire Line
+	10800 1200 10800 1250
+Wire Wire Line
+	10800 1550 10500 1550
+$Comp
+L GND #PWR01
+U 1 1 5A136C50
+P 10650 1600
+F 0 "#PWR01" H 10650 1350 50  0001 C CNN
+F 1 "GND" H 10650 1450 50  0000 C CNN
+F 2 "" H 10650 1600 50  0001 C CNN
+F 3 "" H 10650 1600 50  0001 C CNN
+	1    10650 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 1600 10650 1550
+Connection ~ 10650 1550
+$Comp
+L +3V3 #PWR02
+U 1 1 5A136C76
+P 10800 850
+F 0 "#PWR02" H 10800 700 50  0001 C CNN
+F 1 "+3V3" H 10800 990 50  0000 C CNN
+F 2 "" H 10800 850 50  0001 C CNN
+F 3 "" H 10800 850 50  0001 C CNN
+	1    10800 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10800 850  10800 900 
+Text Notes 10800 1250 0    60   ~ 0
+PWR LED
+Text Notes 10500 1250 2    60   ~ 0
+Heartbeat LED
+Text Label 10500 900  1    60   ~ 0
+HBT_LED
+$Comp
+L GND #PWR?
+U 1 1 5A136F74
+P 7300 7600
+F 0 "#PWR?" H 7300 7350 50  0001 C CNN
+F 1 "GND" H 7300 7450 50  0000 C CNN
+F 2 "" H 7300 7600 50  0001 C CNN
+F 3 "" H 7300 7600 50  0001 C CNN
+	1    7300 7600
+	-1   0    0    1   
+$EndComp
+$Comp
+L +3V3 #PWR?
+U 1 1 5A136F98
+P 6900 7600
+F 0 "#PWR?" H 6900 7450 50  0001 C CNN
+F 1 "+3V3" H 6900 7740 50  0000 C CNN
+F 2 "" H 6900 7600 50  0001 C CNN
+F 3 "" H 6900 7600 50  0001 C CNN
+	1    6900 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 5A136FEA
+P 7300 7650
+F 0 "#FLG?" H 7300 7725 50  0001 C CNN
+F 1 "PWR_FLAG" H 7300 7800 50  0000 C CNN
+F 2 "" H 7300 7650 50  0001 C CNN
+F 3 "" H 7300 7650 50  0001 C CNN
+	1    7300 7650
+	-1   0    0    1   
+$EndComp
+$Comp
+L PWR_FLAG #FLG?
+U 1 1 5A137004
+P 6900 7650
+F 0 "#FLG?" H 6900 7725 50  0001 C CNN
+F 1 "PWR_FLAG" H 6900 7800 50  0000 C CNN
+F 2 "" H 6900 7650 50  0001 C CNN
+F 3 "" H 6900 7650 50  0001 C CNN
+	1    6900 7650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7300 7600 7300 7650
+Wire Wire Line
+	6900 7600 6900 7650
+$EndSCHEMATC
