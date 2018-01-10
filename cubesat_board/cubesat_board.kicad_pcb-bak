@@ -14,26 +14,20 @@
 
   (page A4)
   (layers
-    (0 F.Cu signal)
-    (31 B.Cu signal)
-    (32 B.Adhes user)
-    (33 F.Adhes user)
+    (0 TOP signal)
+    (1 GND signal)
+    (2 PWR signal)
+    (31 BOT signal)
     (34 B.Paste user)
     (35 F.Paste user)
     (36 B.SilkS user)
     (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
-    (40 Dwgs.User user hide)
-    (41 Cmts.User user)
-    (42 Eco1.User user hide)
-    (43 Eco2.User user hide)
     (44 Edge.Cuts user)
     (45 Margin user)
-    (46 B.CrtYd user hide)
-    (47 F.CrtYd user hide)
-    (48 B.Fab user hide)
-    (49 F.Fab user hide)
+    (48 B.Fab user)
+    (49 F.Fab user)
   )
 
   (setup
@@ -310,7 +304,7 @@
     (add_net "Net-(J2-Pad9)")
   )
 
-  (module Pin_Headers:Pin_Header_Straight_2x26_Pitch2.54mm (layer F.Cu) (tedit 59650533) (tstamp 59E2CD6E)
+  (module Pin_Headers:Pin_Header_Straight_2x26_Pitch2.54mm (layer TOP) (tedit 59650533) (tstamp 59E2CD6E)
     (at 211.95296 43.40872)
     (descr "Through hole straight pin header, 2x26, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x26 2.54mm double row")
@@ -452,7 +446,7 @@
     )
   )
 
-  (module Pin_Headers:Pin_Header_Straight_2x26_Pitch2.54mm (layer F.Cu) (tedit 59650533) (tstamp 59E2CDA6)
+  (module Pin_Headers:Pin_Header_Straight_2x26_Pitch2.54mm (layer TOP) (tedit 59650533) (tstamp 59E2CDA6)
     (at 217.03296 43.40872)
     (descr "Through hole straight pin header, 2x26, 2.54mm pitch, double rows")
     (tags "Through hole pin header THT 2x26 2.54mm double row")
@@ -594,7 +588,7 @@
     )
   )
 
-  (module mounting_holes:0.125in_mounting_hole (layer F.Cu) (tedit 59F3B7D7) (tstamp 59F3BC4D)
+  (module mounting_holes:0.125in_mounting_hole (layer TOP) (tedit 59F3B7D7) (tstamp 59F3BC4D)
     (at 219.57296 38.32872)
     (fp_text reference REF** (at 0 3.81) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -605,7 +599,7 @@
     (pad "" np_thru_hole circle (at 0 0) (size 6.35 6.35) (drill 3.175) (layers *.Cu *.Mask))
   )
 
-  (module mounting_holes:0.125in_mounting_hole (layer F.Cu) (tedit 59F3B7D7) (tstamp 59F50262)
+  (module mounting_holes:0.125in_mounting_hole (layer TOP) (tedit 59F3B7D7) (tstamp 59F50262)
     (at 219.57296 111.98872)
     (fp_text reference REF** (at 0 3.81) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -616,7 +610,7 @@
     (pad "" np_thru_hole circle (at 0 0) (size 6.35 6.35) (drill 3.175) (layers *.Cu *.Mask))
   )
 
-  (module mounting_holes:0.125in_mounting_hole (layer F.Cu) (tedit 59F3B7D7) (tstamp 59F50286)
+  (module mounting_holes:0.125in_mounting_hole (layer TOP) (tedit 59F3B7D7) (tstamp 59F50286)
     (at 133.84796 114.52872)
     (fp_text reference REF** (at 0 3.81) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
@@ -627,7 +621,7 @@
     (pad "" np_thru_hole circle (at 0 0) (size 6.35 6.35) (drill 3.175) (layers *.Cu *.Mask))
   )
 
-  (module mounting_holes:0.125in_mounting_hole (layer F.Cu) (tedit 59F3B7D7) (tstamp 59F5029E)
+  (module mounting_holes:0.125in_mounting_hole (layer TOP) (tedit 59F3B7D7) (tstamp 59F5029E)
     (at 133.84796 34.51872)
     (fp_text reference REF** (at 0 3.81) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
