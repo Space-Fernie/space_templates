@@ -179,8 +179,6 @@ F 3 "" H 7550 3500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7550 3500 7500 3500
-Text Label 5200 2400 2    60   ~ 0
-1-WIRE
 Text Label 5200 2600 2    60   ~ 0
 BAT_HTR_EN_4
 Text Label 5200 2700 2    60   ~ 0
@@ -189,8 +187,6 @@ Text Label 5200 2800 2    60   ~ 0
 BAT_HTR_EN_2
 Text Label 5200 2900 2    60   ~ 0
 BAT_HTR_EN_1
-Text Label 3000 3000 0    60   ~ 0
-ADC_INT
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5A569A3C
@@ -220,12 +216,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR?
 U 1 1 5A569CC3
-P 4450 2450
-F 0 "#PWR?" H 4450 2200 50  0001 C CNN
-F 1 "GND" V 4455 2322 50  0000 R CNN
-F 2 "" H 4450 2450 50  0001 C CNN
-F 3 "" H 4450 2450 50  0001 C CNN
-	1    4450 2450
+P 4450 2500
+F 0 "#PWR?" H 4450 2250 50  0001 C CNN
+F 1 "GND" V 4400 2600 50  0000 R CNN
+F 2 "" H 4450 2500 50  0001 C CNN
+F 3 "" H 4450 2500 50  0001 C CNN
+	1    4450 2500
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -240,11 +236,7 @@ F 3 "" H 3800 3550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4350 2450 4350 2500
-Wire Wire Line
-	4350 2450 4450 2450
-Text Label 5200 4200 2    60   ~ 0
-PAYLOAD_I_SENSE
+	4350 2500 4450 2500
 $Comp
 L power:+3V3 #PWR?
 U 1 1 5A56AA95
@@ -353,20 +345,16 @@ Wire Wire Line
 Connection ~ 4400 3850
 Wire Wire Line
 	4400 3850 4400 3900
-Text Label 5200 4100 2    60   ~ 0
-He_Tx_I_SENSE
 Wire Wire Line
 	7500 4700 7550 4700
 Wire Wire Line
 	7550 4700 7550 4750
 Wire Wire Line
 	7550 4800 7500 4800
-Text Label 8350 4400 2    60   ~ 0
-PAYLOAD_ACT
 Text Label 6150 4400 0    60   ~ 0
-SC4
+SDA_4
 Text Label 6150 4300 0    60   ~ 0
-SD4
+SDA_4
 $Comp
 L power:GND #PWR?
 U 1 1 5A58FE1F
@@ -553,32 +541,6 @@ Wire Wire Line
 Wire Wire Line
 	3850 2400 3850 2500
 Connection ~ 3850 2400
-$Comp
-L power:-BATT #PWR?
-U 1 1 5A751FB0
-P 3750 2600
-F 0 "#PWR?" H 3750 2450 50  0001 C CNN
-F 1 "-BATT" V 3765 2727 50  0000 L CNN
-F 2 "" H 3750 2600 50  0001 C CNN
-F 3 "" H 3750 2600 50  0001 C CNN
-	1    3750 2600
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3750 2600 3850 2600
-Wire Wire Line
-	3850 2600 3850 2700
-Connection ~ 3850 2600
-Wire Wire Line
-	3850 2700 3850 2800
-Connection ~ 3850 2700
-Wire Wire Line
-	3850 2800 3850 2900
-Connection ~ 3850 2800
-Wire Wire Line
-	5200 4200 4350 4200
-Wire Wire Line
-	5200 4100 4350 4100
 Wire Wire Line
 	5200 2900 4350 2900
 Wire Wire Line
@@ -587,10 +549,6 @@ Wire Wire Line
 	5200 2700 4350 2700
 Wire Wire Line
 	5200 2600 4350 2600
-Wire Wire Line
-	5200 2400 4350 2400
-Wire Wire Line
-	3850 3000 3000 3000
 Wire Wire Line
 	3850 3100 3000 3100
 Wire Wire Line
@@ -626,9 +584,75 @@ Wire Wire Line
 Wire Wire Line
 	7000 4400 6150 4400
 Wire Wire Line
-	8350 4400 7500 4400
-Wire Wire Line
 	8350 2700 7500 2700
 Wire Wire Line
 	8350 2600 7500 2600
+$Comp
+L power:GND #PWR?
+U 1 1 5A891B9F
+P 3750 2600
+F 0 "#PWR?" H 3750 2350 50  0001 C CNN
+F 1 "GND" V 3755 2472 50  0000 R CNN
+F 2 "" H 3750 2600 50  0001 C CNN
+F 3 "" H 3750 2600 50  0001 C CNN
+	1    3750 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3750 2600 3850 2600
+Wire Wire Line
+	3850 2600 3850 2700
+Connection ~ 3850 2600
+Wire Wire Line
+	3850 2700 3850 2800
+Connection ~ 3850 2700
+Wire Wire Line
+	3850 2800 3850 2900
+Connection ~ 3850 2800
+Text Notes 7850 4550 0    60   ~ 0
+VAA = He_7V2
+$Comp
+L power:VPP #PWR?
+U 1 1 5A8A1847
+P 7550 4600
+F 0 "#PWR?" H 7550 4450 50  0001 C CNN
+F 1 "VPP" V 7565 4728 50  0000 L CNN
+F 2 "" H 7550 4600 50  0001 C CNN
+F 3 "" H 7550 4600 50  0001 C CNN
+	1    7550 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7550 4600 7500 4600
+$Comp
+L power:VPP #PWR?
+U 1 1 5A8A4598
+P 6950 4600
+F 0 "#PWR?" H 6950 4450 50  0001 C CNN
+F 1 "VPP" V 6965 4727 50  0000 L CNN
+F 2 "" H 6950 4600 50  0001 C CNN
+F 3 "" H 6950 4600 50  0001 C CNN
+	1    6950 4600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6950 4600 7000 4600
+Text Notes 7850 4650 0    60   ~ 0
+VPP = PAYLOAD_7V2
+Text Label 8350 4300 2    60   ~ 0
+MOTOR_CONF_LOAD
+Text Label 5200 4200 2    60   ~ 0
+MOTOR_CONF_CLK
+Text Label 5200 4100 2    60   ~ 0
+MOTOR_CONF_DAT
+Wire Wire Line
+	5200 4100 4350 4100
+Wire Wire Line
+	5200 4200 4350 4200
+Wire Wire Line
+	8350 4300 7500 4300
+Wire Wire Line
+	8350 4400 7500 4400
+Text Label 8350 4400 2    60   ~ 0
+MOTOR_CLK
 $EndSCHEMATC
