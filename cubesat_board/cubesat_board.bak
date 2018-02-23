@@ -352,9 +352,9 @@ Wire Wire Line
 Wire Wire Line
 	7550 4800 7500 4800
 Text Label 6150 4400 0    60   ~ 0
-SC4
+SDA_4
 Text Label 6150 4300 0    60   ~ 0
-SD4
+SDA_4
 $Comp
 L power:GND #PWR?
 U 1 1 5A58FE1F
